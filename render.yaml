@@ -3,6 +3,7 @@ services:
     name: my-invidious-instance
     env: docker
     plan: free
+    dockerfilePath: docker/Dockerfile
     envVars:
       - key: INVIDIOUS_DATABASE_URL
         fromDatabase:
