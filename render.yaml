@@ -3,7 +3,6 @@ services:
     name: my-invidious-instance
     env: docker
     plan: free
-    startCommand: ./invidious
     envVars:
       - key: INVIDIOUS_DATABASE_URL
         fromDatabase:
